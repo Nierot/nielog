@@ -39,7 +39,7 @@ exports.Log = {
      * level 2 or lower
      */
     info: (...message) => {
-        if (exports.Log.currentLevel <= 2) this._print(message, exports.Log._levels.INFO, new Date());
+        if (exports.Log.currentLevel <= 2) exports.Log._print(message, exports.Log._levels.INFO, new Date());
     },
 
     /**
@@ -47,7 +47,7 @@ exports.Log = {
      * level 1 only
      */
     verbose: (...message) => {
-        if (exports.Log.currentLevel === 1) this._print(message, exports.Log._levels.DEBUG, new Date());
+        if (exports.Log.currentLevel === 1) exports.Log._print(message, exports.Log._levels.DEBUG, new Date());
     },
 
     /**
@@ -55,7 +55,7 @@ exports.Log = {
      * level 3 or lower
      */
     error : (...message) => {
-        if (exports.Log.currentLevel <= 3) this._print(message, exports.Log._levels.ERROR, new Date());
+        if (exports.Log.currentLevel <= 3) exports.Log._print(message, exports.Log._levels.ERROR, new Date());
     },
 
     _print: (messages, level, date) => {
