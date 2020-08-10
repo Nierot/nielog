@@ -24,7 +24,7 @@ exports.Log = {
      */
     setColor: boolean => exports.Log.color = boolean,
 
-    currentLevel = 1,
+    currentLevel: 1,
 
     _levels: {
         INFO: 'info',
