@@ -1,0 +1,16 @@
+{
+  "name": "nielog",
+  "version": "1.0.0",
+  "description": "A simple logging module",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nierot/nielog.git"
+  },
+  "author": "Nierot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nierot/nielog/issues"
+  },
+  "homepage": "https://github.com/Nierot/nielog#readme"
+}
